@@ -22,6 +22,7 @@ productoBrazalete = 12000
 productoAnillo = 13000
 productoAros = 14000
 
+
 conjuntoProductos = [productoReloj, productoCollar,
                      productoBrazalete, productoAnillo, productoAros]
 cantidadProductos = input(
@@ -29,28 +30,30 @@ cantidadProductos = input(
 if int(cantidadProductos) == 0:
     print("Selecciono Reloj")
     cantidadCompra = input("Ingrese cantidad a llevar: ")
-    print("Total: " + "$" + str(int(productoReloj) * int(cantidadCompra)))
-
 else:
     if int(cantidadProductos) == 1:
         print("Selecciono Collar")
         cantidadCompra = input("Ingrese cantidad a llevar: ")
-        print("Total: " + "$" + str(int(productoReloj) * int(cantidadCompra)))
-
     else:
-        if int(cantidadProductos) == 2:
-            print("Selecciono Brazalete")
-            cantidadCompra = input("Ingrese cantidad a llevar: ")
-            print("Total: " + "$" + str(int(productoReloj) * int(cantidadCompra)))
+      if int(cantidadProductos) == 2:
+        print("Selecciono Brazalete")
+        cantidadCompra = input("Ingrese cantidad a llevar: ")
+      else:
+        if int(cantidadProductos) == 3:
+          print("Selecciono Anillo")
+          cantidadCompra = input("Ingrese cantidad a llevar: ")
         else:
-            if int(cantidadProductos) == 3:
-                print("Selecciono Anillo")
-                cantidadCompra = input("Ingrese cantidad a llevar: ")
-                print("Total: " + "$" +
-                      str(int(productoReloj) * int(cantidadCompra)))
-            else:
-                if int(cantidadProductos) == 4:
-                    print("Selecciono Aros")
-                    cantidadCompra = input("Ingrese cantidad a llevar: ")
-                    print("Total: " + "$" +
-                          str(int(productoReloj) * int(cantidadCompra)))
+          if int(cantidadProductos) == 4:
+            print("Selecciono Aros")
+            cantidadCompra = input("Ingrese cantidad a llevar: ")
+          
+cantidad_Productos = int(cantidadProductos)
+cantidad_Compra = int(cantidadCompra)
+totalCompra = cantidad_Compra*cantidad_Productos
+
+print("El total neto de su compra es: $ " + str(totalCompra))
+
+respuestaUsuario = str(input("¿Desea agregar algo más?(Si/No) :"))
+if respuestaUsuario == ("Si" or "si"):
+  cantidadProductos;
+  cantidadCompra;
