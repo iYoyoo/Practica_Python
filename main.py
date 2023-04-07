@@ -12,7 +12,7 @@ conjuntoProductos = [productoReloj, productoCollar,
                      productoBrazalete, productoAnillo, productoAros]
 
 producto = input(
-      "Ingrese: \n 0. Seleccionar Reloj \n 1. Seleccionar Collar \n 2. Seleccionar Brazalete \n 3. Seleccionar Anillo \n 4. Seleccionar Aros \n : ")
+      "Ingrese: \n 0. Seleccionar Reloj $10.000 \n 1. Seleccionar Collar $11.000 \n 2. Seleccionar Brazalete $12.000 \n 3. Seleccionar Anillo $13.000 \n 4. Seleccionar Aros $14.000 \n : ")
 if int(producto) == 0:
       print("Selecciono Reloj")
       cantidadCompra = input("Ingrese cantidad a llevar: ")
